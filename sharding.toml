@@ -1,0 +1,18 @@
+[[shard]]
+name = "luffy"
+shardId = 0
+address = "127.0.0.1:8080"
+replicas = ["127.0.0.22:8080"]
+
+[[shard]]
+name = "zoro"
+shardId = 1
+address = "127.0.0.1:8081"
+replicas = ["127.0.0.33:8081"]
+
+[[shard]]
+name = "nami"
+shardId = 2
+address = "127.0.0.1:8082"
+replicas = ["127.0.0.44:8082"]
+
