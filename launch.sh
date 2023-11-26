@@ -19,13 +19,13 @@ go install -v
 sleep 1
 
 distributed-kv-store -db-location=luffy.db -http-addr=127.0.0.1:8080 -config-file=sharding.toml -shard=luffy &
-#distributed-kv-store -db-location=luffy.db -http-addr=127.0.0.22:8080 -config-file=sharding.toml -shard=luffy -replica=true &
+distributed-kv-store -db-location=luffy.db -http-addr=127.0.0.22:8080 -config-file=sharding.toml -shard=luffy -replica=true &
 
 distributed-kv-store -db-location=zoro.db -http-addr=127.0.0.1:8081 -config-file=sharding.toml -shard=zoro &
-#distributed-kv-store -db-location=zoro.db -http-addr=127.0.0.33:8081 -config-file=sharding.toml -shard=zoro -replica &
+distributed-kv-store -db-location=zoro.db -http-addr=127.0.0.33:8081 -config-file=sharding.toml -shard=zoro -replica &
 
 distributed-kv-store -db-location=nami.db -http-addr=127.0.0.1:8082 -config-file=sharding.toml -shard=nami &
-#distributed-kv-store -db-location=nami.db -http-addr=127.0.0.44:8082 -config-file=sharding.toml -shard=nami -replica &
+distributed-kv-store -db-location=nami.db -http-addr=127.0.0.44:8082 -config-file=sharding.toml -shard=nami -replica &
 
 wait
 
